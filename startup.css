@@ -446,7 +446,7 @@ button {
           transform: translate3d(-640px, 0, 0);
 }
 
- padding .button {
+  .submit, .fb-btn {
   display: block;
   margin: 0 auto;
   width: 260px;
