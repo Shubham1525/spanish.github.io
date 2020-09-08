@@ -145,7 +145,8 @@ footer a {
 }
 #padding
 {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 *,
@@ -175,271 +176,380 @@ button {
   text-align: center;
 }
 
-.cont {
-  overflow: hidden;
-  position: relative;
-  width: 900px;
-  height: 550px;
-    margin-top: 100px;
-  margin: 0 auto 100px;
-  background: #fff;
 
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.form {
-  position: relative;
-  width: 640px;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-  padding: 50px 30px 0;
+* {
+  box-sizing: border-box;
 }
 
-.sub-cont {
-  overflow: hidden;
-  position: absolute;
-  left: 640px;
-  top: 0;
-  width: 900px;
-  height: 100%;
-  padding-left: 260px;
-  background: #fff;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-}
-.cont.s--signup .sub-cont {
-  -webkit-transform: translate3d(-640px, 0, 0);
-          transform: translate3d(-640px, 0, 0);
+.d-grid {
+  display: grid;
 }
 
-  .submit, .fb-btn {
-  display: block;
-  margin: 0 auto;
-  width: 260px;
-  height: 36px;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 15px;
+.d-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+button,
+input,
+select {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+button,
+.btn,
+select {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 
-.img {
-  overflow: hidden;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 260px;
-  height: 100%;
-  padding-top: 360px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0
 }
-.img:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 900px;
-  height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
-  background-size: cover;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+
+p {
+  color: #666;
 }
-.img:after {
-  content: "";
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
   position: absolute;
-  left: 0;
-  top: 0;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+.p-sticky {
+  position: sticky;
+}
+
+.btn,
+button,
+.actionbg,
+input {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+
+.btn:hover,
+button:hover {
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+/*--/wrapper--*/
+.wrapper {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.cont.s--signup .img:before {
-  -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
 }
-.img__text {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 50px;
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+.wrapper-full {
   width: 100%;
-  padding: 0 20px;
-  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*--//wrapper--*/
+/*-- login --*/
+.forms23-block-hny h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
   color: #fff;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
-.img__text h2 {
-  margin-bottom: 10px;
+
+.w3l-forms-23 {
+  padding: 2rem 0;
+  align-items: center;
+  background: url(img/backgroung.png) no-repeat top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 0;
+  text-align: center;
+}
+
+.w3l-forms-23:before {
+  content: "";
+  background: rgba(12, 9, 16, 0.57);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.forms23-block-hny .main-bg {
+  background: url(img/download.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  border-radius: 0 0 300px 300px;
+  z-index: 0;
+  position: relative;
+}
+
+.forms23-block-hny .main-bg:before {
+  content: "";
+  background: rgba(43, 32, 34, 0.42);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 300px 300px;
+}
+
+.forms23-block-hny .form23 {
+  background: #fff;
+  box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+  margin: 0 auto;
+  max-width: 430px;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+}
+
+.forms23-block-hny .form23 h6 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.forms23-block-hny .form23 form .input-form {
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  padding: 15px 15px;
+  margin-bottom: 12px;
+  border: 1px solid #dedddd;
+  outline: none;
+  background:transparent;
+}
+.forms23-block-hny .form23 form .input-form:focus {
+  background: rgba(43, 32, 34, 0.09);
+  border: 1px solid #2B2022;
+}
+.forms23-block-hny .form23 p {
+  margin-top: 20px;
+  font-size: 16px;
   font-weight: normal;
 }
-.img__text p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-.cont.s--signup .img__text.m--up {
-  -webkit-transform: translateX(520px);
-          transform: translateX(520px);
-}
-.img__text.m--in {
-  -webkit-transform: translateX(-520px);
-          transform: translateX(-520px);
-}
-.cont.s--signup .img__text.m--in {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.img__btn {
-  overflow: hidden;
-  z-index: 2;
-  position: relative;
-  width: 100px;
-  height: 36px;
-  margin: 0 auto;
-  background: transparent;
+
+.forms23-block-hny button.btn.loginhny-btn {
+  width: 100%;
+  padding: 15px 28px;
   color: #fff;
-  text-transform: uppercase;
   font-size: 15px;
-  cursor: pointer;
-}
-.img__btn:after {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #fff;
-  border-radius: 30px;
-}
-.img__btn span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1.2s;
-  transition: -webkit-transform 1.2s;
-  transition: transform 1.2s;
-  transition: transform 1.2s, -webkit-transform 1.2s;
-}
-.img__btn span.m--in {
-  -webkit-transform: translateY(-72px);
-          transform: translateY(-72px);
-}
-.cont.s--signup .img__btn span.m--in {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.cont.s--signup .img__btn span.m--up {
-  -webkit-transform: translateY(72px);
-          transform: translateY(72px);
-}
-
-h2 {
-  width: 100%;
-  font-size: 26px;
+  display: inline-block;
   text-align: center;
-}
-
-label {
-  display: block;
-  width: 260px;
-  margin: 25px auto 0;
-  text-align: center;
-}
-label span {
-  font-size: 12px;
-  color: #cfcfcf;
+  font-weight: 600;
+  line-height: 24px;
   text-transform: uppercase;
+  border: none;
+  background: #2B2022;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -o-border-radius:4px;
+  -moz-border-radius:4px;
+  margin-top: 12px;
 }
 
-input {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-  padding-bottom: 5px;
-  font-size: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  text-align: center;
+.forms23-block-hny button.btn.loginhny-btn:hover {
+  background: #BD783A;
+  color: #2B2022;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
-.forgot-pass {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 12px;
-  color: #cfcfcf;
-}
-
-.submit {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  background: #d4af7a;
-  text-transform: uppercase;
-}
-
-.fb-btn {
-  border: 2px solid #d3dae9;
-  color: #8fa1c7;
-}
-.fb-btn span {
+.forms23-block-hny .form23 a {
+  font-size: 15px;
+  line-height: 20px;
   font-weight: bold;
-  color: #455a81;
+  color: #BD783A;
+}
+.forms23-block-hny .form23 a:hover {
+  color:#2B2022;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.forms23-block-hny .first-look{
+  border-radius: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(99, 85, 87, 0.19);
+  border: 4px solid rgba(99, 85, 87, 0.19);
+}
+.forms23-block-hny .first-look img{
+  margin-top: 12px;
+  text-align: center;
+}
+.forms23-block-hny .bottom-content {
+  padding: 35px;
 }
 
-.sign-in {
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-.cont.s--signup .sign-in {
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 1.2s;
-          transition-duration: 1.2s;
-  -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
-}
-
-.sign-up {
-  -webkit-transform: translate3d(-900px, 0, 0);
-          transform: translate3d(-900px, 0, 0);
-}
-.cont.s--signup .sign-up {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.icon-link {
+.forms23-block-hny .speci-login {
   position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
-}
-.icon-link img {
-  width: 100%;
-  vertical-align: top;
-}
-.icon-link--twitter {
-  left: auto;
-  right: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
 }
 
+.forms23-block-hny .form23 h6 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+.forms23-block-hny .form23 h6.sec-one {
+  padding-top:5em;
+  padding-bottom: 2.8em;
+  margin-bottom: 1em;
+}
+
+/*/copy-right*/
+.w3l-copy-right.text-center {
+  margin-top: 2em;
+}
+
+.w3l-copy-right p {
+  font-size: 15px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.w3l-copy-right p a {
+  color: #bd783a;
+}
+.w3l-copy-right p a:hover {
+  color:#fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+/*//copy-right*/
+@media all and (max-width:667px) {
+  .forms23-block-hny h1 {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 440px) {
+  .forms23-block-hny .form23 h6 {
+    padding-top: 4em;
+  }
+  .forms23-block-hny h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 410px) {
+  .forms23-block-hny .form23 h6.sec-one {
+    padding-top: 3.5em;
+  }
+
+  .forms23-block-hny .bottom-content {
+    padding: 35px 20px;
+  }
+}
 
 
 /* Media Queries */
@@ -543,7 +653,7 @@ input {
 
 @media only screen and (max-width: 479px){
     .cont{
-        width: 455px;
+        width: 445px;
     }
 }
 

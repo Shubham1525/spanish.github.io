@@ -222,62 +222,50 @@
 </form>
     </section>
         </div>-->
-           
+           <!-- /login-section -->
 <div id="padding">
-<div class="cont">
-  <div class="form sign-in">
-    <h2>Welcome back,</h2>
-    <label>
-      <span>Email</span>
-      <input type="email" />
-    </label>
-    <label>
-      <span>Password</span>
-      <input type="password" />
-    </label>
-    <p class="forgot-pass">Forgot password?</p>
-    <button type="button" class="submit">Sign In</button>
-    <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
-  </div>
-  <div class="sub-cont">
-    <div class="img">
-      <div class="img__text m--up">
-        <h2>New here?</h2>
-        <p>Sign up and discover great amount of new opportunities!</p>
-      </div>
-      <div class="img__text m--in">
-        <h2>One of us?</h2>
-        <p>If you already has an account, just sign in. We've missed you!</p>
-      </div>
-      <div class="img__btn">
-        <span class="m--up">Sign Up</span>
-        <span class="m--in">Sign In</span>
-      </div>
-    </div>
-    <div class="form sign-up">
-      <h2>Time to feel like home,</h2>
-      <label>
-        <span>Name</span>
-        <input type="text" />
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="email" />
-      </label>
-      <label>
-        <span>Password</span>
-        <input type="password" />
-      </label>
-      <button type="button" class="submit">Sign Up</button>
-      <button type="button" class="fb-btn">Join with <span>facebook</span></button>
-    </div>
-  </div>
-</div>
-</div>
-             
+	<section class="w3l-forms-23">
+		<div class="forms23-block-hny">
+			<div class="wrapper">
+				<h1> Login Form</h1>
+				<!-- if logo is image enable this   
+					<a class="logo" href="index.html">
+					  <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+					</a> 
+				-->
+				<div class="d-grid forms23-grids">
+					<div class="form23">
+						<div class="main-bg">
+							<h6 class="sec-one">Spanish Tutorial</h6>
+							<div class="speci-login first-look">
+								<img src="img/user.png" alt="" class="img-responsive">
+							</div>
+						</div>
+						<div class="bottom-content">
+							<form action="#" method="post">
+								<input type="email" name="email" class="input-form" placeholder="Your Email"
+										required="required" />
+								<input type="password" name="password" class="input-form"
+										placeholder="Your Password" required="required" />
+								<button type="submit" class="loginhny-btn btn">Login</button>
+							</form>
+							<p>Not a member yet? <a href="#">Join Now!</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="w3l-copy-right text-center">
+					<p>© 2020 Trendz Login Form. All rights reserved | Design by
+						<a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+	<!-- //login-section -->
+
         
 
-                </div>
+                </div></div>
     
 
                 
@@ -316,9 +304,13 @@
           <script type="text/javascript">
               
               
-    document.querySelector('.img__btn').addEventListener('click', function() {
-  document.querySelector('.cont').classList.toggle('s--signup');
-});
+   	addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
         </script>
         
         
