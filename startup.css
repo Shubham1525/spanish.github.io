@@ -452,7 +452,9 @@ input {
         padding: 20px;
     }
     
+    
 }
+
 
 
 
@@ -541,22 +543,14 @@ input {
 
 @media only screen and (max-width: 479px){
     .cont{
-        width: 540px;
+        width: 468px;
     }
 }
 
 
-@media only screen and (max-width: 479px){
-    .cover{
-        width: 540px;
-    }
-}
 
-@media only screen and (max-width: 479px){
-    #left{
-        padding-left: 50px;
-    }
-}
+
+
  /* courses */
 
 .course-slider {
@@ -817,7 +811,7 @@ input {
 
 @media only screen and (max-width: 479px){
     #study{
-        width: 540px;
+        width: 460px;
     }
 }
 
@@ -887,9 +881,8 @@ input {
 	}
 }
 
-
 @media only screen and (max-width: 479px){
-    #footer-main{
+    #foot{
         width: 540px;
     }
 }
