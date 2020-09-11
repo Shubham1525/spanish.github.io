@@ -22,106 +22,146 @@
     
    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <header class="header">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"><img src="img/design.jpg" alt="logo" >  Spanish Teaching</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="Courses.html">COURSES</a></li>
-       
-        <li><a href="About%20us.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
-    </div>
-    </header>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="index.html"><img src="img/design.jpg" alt="logo" ><i>Welcome to Spanish Tutorial</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Courses.html">COURSES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About%20us.html">ABOUT US</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-           
- <div class="cover">
-        <div class="cover-text">
-        
+       
+       <div class="contaner-fluid">
+     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="courses/shub.jpg" class="d-block w-100" alt="..."  height="650px">
+      <div class="carousel-caption d-none d-md-block">
         <h1><i>MI CASA</i><br>
     <i>EU SU CASA</i></h1> 
   <p>Make you learn spanish here</p> 
-               <form class="form-inline" >
-    
-    <input type="text" class="form-control" id="email" placeholder="Courses" name="courses">
-    <input type="text" class="form-control" id="pwd" placeholder="Events" name="event">
-    <div class="form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
+               
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary">Vamos</button>
-  </form>   
-        </div>
+    <div class="carousel-item">
+      <img src="img/carousel/dylan-lu-Wn5fM5BXa50-unsplash.jpg" class="d-block w-100" alt="..." height="650px">
+      <div class="carousel-caption d-none d-md-block">
+         <h1><i>MI CASA</i><br>
+    <i>EU SU CASA</i></h1> 
+  <p>Make you learn spanish here</p> 
+               
+      </div>
     </div>
-        
-         <div id="tour" class="bg-1">
+    <div class="carousel-item">
+      <img src="img/carousel/jon-tyson-8MMtYM_3xMY-unsplash%20(1).jpg" class="d-block w-100" alt="..." height="650px">
+      <div class="carousel-caption d-none d-md-block">
+         <h1><i>MI CASA</i><br>
+    <i>EU SU CASA</i></h1> 
+  <p>Make you learn spanish here</p> 
+              
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+       
+       </div>
+       
+       
+       <div id="tour" class="bg-1">
              <div id="left">
   <div class="container">
-    <h3 class="text-center">ONLINE COURSES &amp; EVENTS</h3><br>
+    <h2 class="text-center online">ONLINE COURSES &amp; EVENTS</h2><br>
       
-    <p class="text-center">We will make you learn the best.<br> Remember to enroll your course. </p>
+    
     
     <br> <br>
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/download.jpg" alt="Paris" width="400" height="300">
+          <img src="img/download.jpg" id="pic" alt="Paris"     width="360px" height="300">
+     <div id="cup">
           <p><strong>spanish for beginner</strong></p>
           <p>Friday 27 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
         </div>
+          </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/mexi.jpg" alt="New York" width="400" height="300">
+          <img src="img/mexi.jpg" id="pic" alt="New York" width="360px" height="300">
+            <div id="cup">
           <p><strong>Spanish for medium level</strong></p>
           <p>Saturday 28 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
+                </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/dv.png" alt="San Francisco" width="400" height="300">
+          <img src="img/dv.png" id="pic" alt="San Francisco" width="360px" height="300">
+             <div id="cup">
           <p><strong>Introduction tp flameecoo</strong></p>
           <p>Sunday 29 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
-        </div>
+            </div>
+
+            </div>
       </div>
          <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/wdj.png" alt="Paris" width="400" height="300">
-          <p><strong>flameeco begineer</strong></p>
+          <img src="img/wdj.png" id="pic" alt="Paris" width="360px" height="300">
+           <div id="cup">
+            <p><strong>flameeco begineer</strong></p>
           <p>Friday 27 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
-        </div>
+            </div>  </div>
       </div>
          <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/hsu.png" alt="Paris" width="400" height="300">
-          <p><strong>flameeco begineer</strong></p>
+          <img src="img/hsu.png" id="pic" alt="Paris" width="360px" height="300">
+           <div id="cup">
+            <p><strong>flameeco begineer</strong></p>
           <p>Friday 27 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
         </div>
-      </div>
+             </div></div>
          <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="img/download.jpg" alt="Paris" width="400" height="200">
-          <p><strong>Spanish language</strong></p>
+          <img src="img/download.jpg" id="pic" alt="Paris" width="360px" height="200">
+           <div id="cup">
+            <p><strong>Spanish language</strong></p>
           <p>Friday 27 November 2020</p>
           <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Enroll</button>
         </div>
-      </div>
-    </div>
+             </div></div>
+    </div> -->
   </div>  <!--<div class="container">
               <div class="album text-muted">
         
@@ -199,29 +239,7 @@
              </div><!-- container ends-->
                  </div>
         
-         <!--     <section class="container">
-      
-            <h2>Sign up to your Newsletter</h2>
-                  
-              <form class="form-signin">
- 
-                  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
- 
-                  <label for="inputEmail" class="sr-only">Email address</label>
-  
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" >
-  <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" >
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" onclick="myfunction()" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-</form>
-    </section>
-        </div>-->
+
            <!-- /login-section -->
 <div id="padding">
 	<section class="w3l-forms-23">
@@ -253,10 +271,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="w3l-copy-right text-center">
-					<p>© 2020 Trendz Login Form. All rights reserved | Design by
-						<a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -274,8 +289,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <p>uncopyright 2020. do what you want.</p>
-                    <p>coded by <a href="#">Enr team</a></p>
+               
+                    <p>Developed by <a href="https://www.engagenreap.com/" target="_blank">EnR Team</a></p>
                 </div>
                 <div class="col-sm-3">
                     <ul class="list-unstyled">
@@ -301,6 +316,7 @@
             </div>
         </div>
     </footer> 
+        
           <script type="text/javascript">
               
               
@@ -313,7 +329,13 @@
 		}
         </script>
         
-        
+       
+       
+       
+       
+       
+       
+         
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
