@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Lingua project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/contact.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
+    <script type="text/javascript">
+   function sendEvent(){
+
+
+   		console.log( document.getElementById('email').value,  document.getElementById('name').value,  document.getElementById('message').value)
+
+        Email.send({
+            name:document.getElementById('name').value,
+    
+            Host : "smtp.elasticemail.com",
+    
+            Username : "engagenreap@gmail.com",
+    
+            Password : "0A7E9167B7F3B844088B1FFC2E83A1FACBD0",
+    
+            To : 'engagenreap@gmail.com',
+
+            Subject : document.getElementById('email').value+" Tried to contact",
+
+            From: "engagenreap@gmail.com",
+
+            Body : document.getElementById('message').value+" from "+document.getElementById('email').value
+		}).then(function(response){
+			console.log(response)
+	        if (response == 'OK'){ 
+	            alert("Mail sent successfully");
+	        }
+	        else{
+		        throw new Error("Error: " + response);
+		        console.log(response);
+	        }
+        });
+    
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+			
+		
+
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="index.html"> <img src="img/design.png"  alt="logo" width="150px">Spanish lessons for all levels</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><b>HOME </b><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Courses.html"><b>COURSES</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About%20us.html"><b>ABOUT US</b></a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="Contact%20Us.html"><b>CONTACT US</b></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+	<!-- Menu -->
+
+
+	<!-- Contact Map -->
+
+	<div class="contact_map">
+
+		<!-- Google Map -->
+		
+		<div class="map">
+			<div id="google_map" class="google_map">
+				<div class="map_container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.1483731400635!2d-0.6599197842517538!3d51.80344947968493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48765bd21870cadd%3A0x5b1a37d36a1226d!2s7%20Meadowbrook%2C%20Tring%20HP23%205HR%2C%20UK!5e0!3m2!1sen!2sin!4v1599844796488!5m2!1sen!2sin" width="1600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Contact -->
+
+	<div class="contact" >
+		
+		<div class="container">
+			<div class="row row-lg-eq-height">
+
+				<!-- Details -->
+				<div class="col-lg-6">
+					<div class="contact_details">
+						<div class="contact_details_title">Contact Details</div>
+						<ul>
+							<li>
+								<svg fill="rgba(0,0,0,0.4)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+								    <path d="M0 0h24v24H0z" fill="none"/>
+								    <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+								</svg>
+								<span>9;00 AM - 18:00 PM</span>
+							</li>
+							<li>
+								<svg fill="rgba(0,0,0,0.4)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								    <path d="M0 0h24v24H0z" fill="none"/>
+								    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+								</svg>
+								<span>+44 7476721527</span>
+							</li>
+							<li>
+								<svg fill="rgba(0,0,0,0.4)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+								    <path d="M0 0h24v24H0z" fill="none"/>
+								</svg>
+								<span>info@mafaldainspanishtuition.com</span>
+							</li>
+							<li>
+								<svg fill="rgba(0,0,0,0.4)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+								    <path d="M0 0h24v24H0z" fill="none"/>
+								</svg>
+								<span>7 Meadowbrook HP235HR Tring,Hertfordshire</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Form -->
+		<div class="col-lg-6">
+					<div class="contact_form_container">
+						<div class="form_title">Get in Touch</div>
+						<form  id="contact_form" onsubmit="event.preventDefault(); sendEvent();" class="contact_form">
+							<div class="row contact_row">
+								<div class="col-lg-6 contact_col">
+									<input type="text" id="name" name="name" class="form_input" placeholder="Name" required="required" >
+								</div>
+								<div class="col-lg-6 contact_col">
+									<input type="email" id="email" name="email" class="form_input" placeholder="Email" required="required" >
+								</div>
+								<div class="col-lg-12">
+									<textarea class="form_input form_text" name="message" id="message" placeholder="Message" required="required"></textarea>
+								</div>
+								<div class="col">
+									<button type="submit" name="submit"class="form_button trans_200">send message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div> 
+			</div> 
+		</div>
+	</div>  
+
+	<!-- Footer -->
+ <footer id="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                   
+                    <p style="color: #fff;">Developed by <a href="https://www.engagenreap.com/" target="_blank">EnR Team</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Courses.html">Course</a></li>
+                        <li><a href="About%20us.html">about us</a></li>
+                       
+                         <li><a href="Contact%20Us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">youtube</a></li>
+                        <li><a href="">linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6 style="color: #fff;">Spanish tutor</h6>
+                  <img src="img/design.png" width="150px">
+                </div>
+            </div>
+        </div>
+    </footer>
+	</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
