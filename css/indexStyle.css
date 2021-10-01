@@ -1,0 +1,121 @@
+ /*image slider*/
+
+  .carousel-caption
+  {
+     position:absolute;
+     top:50%;
+     transform: translateY(-50%); 
+  }
+
+  .carousel-caption h1
+  {
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+  }
+
+  .carousel-caption p
+  {
+    font-size: 200%;
+    font-weight: 300;
+    text-shadow: 1px 1px 10px #000;
+  }
+
+  .carousel-item .spanishcaption h4
+  {
+    /* margin-top: 95%; */
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color:#ffff00;
+    padding-top: 25%;
+  }
+
+  .carousel-item .spanishcaption p
+  {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+  }
+
+                  
+
+/* Testimonial area  */
+  .slider-area
+  {
+    background-color: #0A182D;
+    padding: 80px 0;
+    position: relative;
+    margin: 120px 0;
+    height: 120vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next
+  {
+    background: transparent;
+  }
+
+  .img-area
+  {
+    width: 150px;
+    height: 150px;
+    margin:auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .img-area img
+  {
+    width: 100%;
+  }
+
+  .slider-area .carousel-caption
+  {
+    position:static;
+    padding-bottom: 15px;
+    padding-top: 300px;
+  }
+  
+  .slider-area  .carousel-caption p
+  {
+    font-size: 18px;
+  }
+
+  .slider-area .carousel-caption h3
+  {
+    color:#4da69a;
+  }
+
+  .carousel-header h1
+  {
+    color:#4da69a;
+    padding-bottom: 16px;
+  }
+
+  .slider-area .carousel-indicators
+  {
+    bottom: 135px;
+  }
+
+
+  /* Newsletter Section  */
+  .btn 
+  {
+    border:2px solid #2626B9;
+  }
+
+  .subscribe-btn :hover
+  {
+    color:#fff;   
+    background-color: #2626B9;
+  }
+
+  .signup-box
+  {
+    padding-top: 24px;
+  }
+  
+  .newsletter
+  {
+    margin-bottom: 100px;
+  }
